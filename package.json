@@ -1,0 +1,17 @@
+{
+    "name": "teste_even3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ikaro Alef",
+    "license": "ISC",
+    "dependencies": {
+        "angular": "^1.7.7",
+        "angular-route": "^1.7.7",
+        "angularjs": "^0.0.1",
+        "bootstrap": "^4.3.1"
+    }
+}
