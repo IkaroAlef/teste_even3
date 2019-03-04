@@ -1,21 +1,21 @@
-<h1>Teste</h1>
-
-<div class="tab-content">
-    <ul class="media-list tab-pane fade in active">
-      <li class="media" ng-repeat="dish in dishes | filter:filtText">
-          <div class="media-left media-middle">
-              <a ng-href="#/menu/{{dish._id}}">
-              <img class="media-object img-thumbnail"
-              ng-src={{dish.image}} alt="Uthappizza">
-              </a>
-          </div>
-          <div class="media-body">
-              <h2 class="media-heading">{{dish.name}}
-               <span class="label label-danger">{{dish.label}}</span>
-               <span class="badge">{{dish.price | currency}}</span></h2>
-              <!-- Details -->
-              <p ng-show="showDetails">{{dish.description}}</p>
-          </div>
-      </li>
-    </ul>
+<div ng-controller='HomeCtrl'>
+    <h1>Marvel</h1>
+    <div class="tab-content">
+        <li ng-repeat="comic in comics">
+            <div class="media-left media-middle">
+                <a ng-href="#/menu/{{comid.id}}">
+                <img class="media-object img-thumbnail"
+                ng-src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" alt={{comics.title}} height="200" width="200">
+                </a>
+            </div>
+            <div class="media-body">
+                <h2 class="media-heading">{{comic.title}}
+                <span class="label label-danger">{comic.label}}</span>
+                <span class="badge">{{comic.prices.price | currency}}</span></h2>
+                <!-- Details -->
+                <p>{{comic.description}}</p>
+            </div>
+        </li>
+        </ul>
   </div>
+</div>

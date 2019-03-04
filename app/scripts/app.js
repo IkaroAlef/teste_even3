@@ -1,7 +1,7 @@
 'use strict';
 var app = angular.module('QuadriMix', ['ngRoute']);
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when('/home',{
             templateUrl: 'app/templates/home.html',
