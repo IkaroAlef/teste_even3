@@ -1,0 +1,31 @@
+<div class="container container-bg mx-auto" ng-controller="ComicDetailCtrl">
+        <div class="card">
+                <div class="row no-gutters p-5">
+                    <div class="col-auto">
+                            <img ng-src="{{comic[0].thumbnail.path}}.{{comic[0].thumbnail.extension}}" class="img-fluid img-detail"
+                             alt={{comic[0].title}}>
+                    </div>
+                    <div class="col">
+                        <div class="card-block px-2">
+                            <h2 class="card-title">{{comic[0].title}}</h2>
+                            <div style="display:inline-flex">
+                            <h6>Autores:</h6>
+                                <h6 ng-repeat="autores in comic[0].creators.items">
+                                    &nbsp{{autores.name}}<span ng-class="{'last':$last}">,</span>
+                                </h6>
+                            </div>
+                            <h4 class="card-text">${{comic[0].prices[0].price}}</h4>
+                            <p class="card-text text-justify">{{comic[0].description}}</p>
+                            <h6>Páginas: {{comic[0].pageCount}}</h6>
+                            <h6>ISBN: {{comic[0].isbn}}</h6>
+                            <a href="#!/comic/{{comic.id}}" class="btn-lg btn btn-primary mt-auto">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100 text-muted">
+                    Observações: observações
+                </div>
+          </div>
+</div>  

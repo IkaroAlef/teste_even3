@@ -7,6 +7,11 @@ app.config(function($routeProvider) {
             templateUrl: 'app/templates/home.html',
             controller: 'HomeCtrl'
         })
+        // route for the dish details page
+		.when('/comic/:id', {
+			templateUrl: 'app/templates/comic_details.html',
+			controller: 'ComicDetailCtrl'
+		})
         .when('/contato',{
             templateUrl: 'app/templates/contato.html',
             controller: 'ContatoCtrl'

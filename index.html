@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quadrimix</title>
 
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/angular/angular-csp.css">
+    <link rel="stylesheet" href="app/css/style.css">
     
 </head>
 <body>
@@ -20,25 +23,123 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li ng-class="{active: activetab == '/home'}" class="nav-item">
-                <a class="nav-link" href="#!/home">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#!/home">
+                  <i class="fa fa-home" aria-hidden="true"></i> Home<span class="sr-only">(current)</span>
+                </a>
             </li>
-            <li ng-class="{active: activetab == '/contato'}" class="nav-item"><a class="nav-link" href="#!/contato">Contato</a></li>
+            <li ng-class="{active: activetab == '/contato'}" class="nav-item">
+              <a class="nav-link" href="#!/contato">
+                <i class="fa fa-envelope" aria-hidden="true"></i> Contato
+              </a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
+          <ul class="navbar-nav">
+              <li ng-class="{active: activetab == '/user'}" class="nav-item">
+                  <a class="nav-link" href="#!/">
+                     <i class="fa fa-user-circle" aria-hidden="true"></i> Minha Conta
+                  </a>
+              </li>
+              <li ng-class="{active: activetab == '/carrinho'}" class="nav-item">
+                <a class="nav-link" href="#!/">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho
+                </a>
+              </li>
+            </ul>
         </div>
       </nav>
 
       <!-- Views -->
-      <ng-view></ng-view>
+      <ng-view id="content"></ng-view>
+
+      <!-- Footer -->
+<footer class="page-footer font-small black pt-4" id="footer">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase">QuadriMix Loja de Quadrinhos</h5>
+          <p>CNPJ: 00.000.080/0001-78<br>
+              Endereço: Rua 123, numero 123<br>
+              CEP 000000-000 - PE - Recife<br>
+              Telefone: (81)0000-0000<br>
+              email@quadrimix.com
+          </p>
+
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Redes Sociais</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">Instagram</a>
+              </li>
+              <li>
+                <a href="#!">Youtube</a>
+              </li>
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links Úteis</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Dúvidas Frequentes</a>
+              </li>
+              <li>
+                <a href="#!">Trocas e Devoluções</a>
+              </li>
+              <li>
+                <a href="#!">Mapa do Site</a>
+              </li>
+              <li>
+                <a href="#!">Formas de Pagamento</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> QuadriMix.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
     <!-- Build JS-->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="node_modules/crypto-js/crypto-js.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     
     <script src="app/scripts/app.js"></script>
     <script src="app/scripts/services.js"></script>
