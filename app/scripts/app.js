@@ -1,20 +1,24 @@
 'use strict';
 var app = angular.module('QuadriMix', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
-        .when('/home',{
+        //rota para home page
+        .when('/home', {
             templateUrl: 'app/templates/home.html',
             controller: 'HomeCtrl'
         })
-        // route for the dish details page
-		.when('/comic/:id', {
-			templateUrl: 'app/templates/comic_details.html',
-			controller: 'ComicDetailCtrl'
-		})
-        .when('/contato',{
+        // rota para detalhes do quadrinho
+        .when('/comic/:id', {
+            templateUrl: 'app/templates/comic_details.html',
+            controller: 'ComicDetailCtrl'
+        })
+        //rota para tela de contato (inativo)
+        .when('/contato', {
             templateUrl: 'app/templates/contato.html',
             controller: 'ContatoCtrl'
         })
-        .otherwise({redirectTo:'/'});
+        .otherwise({
+            redirectTo: '/'
+        });
 });
