@@ -19,6 +19,6 @@ app.config(function ($routeProvider) {
             controller: 'ContatoCtrl'
         })
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/home'
         });
 });
