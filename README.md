@@ -16,10 +16,10 @@ As instruções a seguir ajudarão você a configurar uma cópia desse projeto e
 
 ## Como utilizar
 
-1 - Baixe o ZIP deste projeto; 
-2 - Extraia o conteúdo na pasta htdocs do XAMPP (C:\xampp\htdocs); 
-3 - Renomeie a pasta extraída para "teste_even3" (ficará assim: C:\xampp\htdocs\teste_even3); 
-4 - No seu navegador, acesse http://localhost/teste_even3; 
+1. Baixe o .ZIP deste projeto; 
+2. Extraia o conteúdo na pasta htdocs do XAMPP (C:\xampp\htdocs); 
+3. Renomeie a pasta extraída para "teste_even3" (ficará assim: C:\xampp\htdocs\teste_even3); 
+4. No seu navegador, acesse http://localhost/teste_even3; 
 
 ## Desenvolvido com
 
