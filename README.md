@@ -2,10 +2,6 @@
 
 Loja de Quadrinhos fictícia chamada Quadrimix, desenvolvida em formato Single Page Application usando a API da Marvel para consumo de dados.
 
-## Organização de Pensamentos (opcional)
-
-Organização pessoal para me guiar no desenvolvimento deste projeto, pois se trata de um teste prático da [Even3](https://www.even3.com.br/). https://docs.google.com/document/d/1kc9AuePvOxT7mKAidys5j-SKZvnwkVJ8q2SEsPaMmoI/edit?usp=sharing
-
 ## Começando
 
 As instruções a seguir ajudarão você a configurar uma cópia desse projeto e rodar em sua máquina local.
@@ -33,3 +29,7 @@ As instruções a seguir ajudarão você a configurar uma cópia desse projeto e
 ## Autor
 
 * **Íkaro Alef**  - [GitHub](https://github.com/IkaroAlef)
+
+## Organização de Pensamentos (opcional)
+
+Organização pessoal para me guiar no desenvolvimento deste projeto, pois se trata de um teste prático da [Even3](https://www.even3.com.br/). https://docs.google.com/document/d/1kc9AuePvOxT7mKAidys5j-SKZvnwkVJ8q2SEsPaMmoI/edit?usp=sharing
